@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>django平台</title>
+    <style>
+        .flex-container {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+            width: 400px;
+            height: 250px;
+            background-color: lightgrey;
+        }
+
+        .flex-item {
+            background-color: cornflowerblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <div class="flex-container">
+        <div class="flex-item" id="head">
+            {#   头部  #}
+            flex item 1
+        </div>
+        <div class="flex-item" id="daohang">
+            {#   左侧导航     #}
+            flex item 2
+        </div>
+        <div class="flex-item" id="main">
+            {#  右侧主要内容  #}
+            flex item 3
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item" id="head">
+            {#   头部  #}
+            flex item 1
+        </div>
+        <div class="flex-item" id="daohang">
+            {#   左侧导航     #}
+            flex item 2
+        </div>
+        <div class="flex-item" id="main">
+            {#  右侧主要内容  #}
+            flex item 3
+        </div>
+    </div>
+</div>
+</body>
+</html>
