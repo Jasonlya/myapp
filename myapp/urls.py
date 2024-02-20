@@ -22,5 +22,6 @@ from myapp2 import views
 urlpatterns = [
     path('', views.login),
     path('login/', views.login),
-    path('home/',views.home)
+    path('home/', views.home),
+    path('home/testdatas/', views.testdatas),
 ]

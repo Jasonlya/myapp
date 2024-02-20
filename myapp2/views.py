@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django import forms
 from django.core.validators import RegexValidator
 from myapp2 import models
+from django.views.decorators.clickjacking import xframe_options_exempt
 
 
 # Create your views here.
@@ -69,3 +70,7 @@ def login(request):
 
 def home(request):
     return render(request, 'home.html')
+
+
+def testdatas(request):
+    return render(request, 'testdatas.html')

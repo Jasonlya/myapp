@@ -48,6 +48,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'myapp2.middle.AuthMiddle.AuthMiddleware',  ##认证中间件。自己写的中间件，放在在前面前面处理，放在后面最后处理。
+    'myapp2.middle.XFrameOptionsMiddle.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = 'myapp.urls'
